@@ -16,16 +16,19 @@ body {
 }
 
 tr.header {
-    height: 40px;
+    height: 0px;
 }
 tr.footer {
     font: 150%/100% 'Gill Sans MT', Helvetica, sans-serif;
     color: white;
 }
 tr.main {
-    height: 500px;
+    height: 600px;
+    vertical-align: top;
 }
 
+td.content {
+}
 td.navigation {
     font: 250%/120% 'Gill Sans MT', Helvetica, sans-serif;
     color: white;
@@ -43,6 +46,7 @@ div.title {
 }
 div.content {
     width: 604px;
+    padding-top: 80px;
     font-family: 'Gill Sans MT', Helvetica, sans-serif;
     color: white;
 }
@@ -100,7 +104,7 @@ ul.gallery li {
 ul.gallery a {
     padding: 2px;
     display: block;
-    border: 2px #000 solid;
+    border: 2px #222 solid;
     -moz-border-radius: 5px;
     -webkit-border-radius: 5px;
     line-height: 0;
