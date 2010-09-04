@@ -13,20 +13,25 @@ body {
     background-color: black;
     width: 920px;
     margin: 20px auto;
+    font-family: 'Gill Sans MT', Helvetica, sans-serif;
+    color: white;
 }
 
 tr.header {
-    height: 80px;
+    height: 40px;
+}
+tr.footer {
+    font: 150%/100% 'Gill Sans MT', Helvetica, sans-serif;
+    color: white;
+}
+tr.main {
+    height: 500px;
 }
 
 td.navigation {
     font: 250%/120% 'Gill Sans MT', Helvetica, sans-serif;
     color: white;
-}
-
-tr.footer {
-    font: 150%/100% 'Gill Sans MT', Helvetica, sans-serif;
-    color: white;
+    vertical-align: top;
 }
 
 div.title {
@@ -36,6 +41,11 @@ div.title {
 div.navigation {
     padding: 10px 40px 10px 0px;
     text-align: right;
+}
+div.subnavigation {
+    padding: 10px 40px 10px 0px;
+    text-align: right;
+    font: 60%/100% 'Gill Sans MT', Helvetica, sans-serif;
 }
 
 a {

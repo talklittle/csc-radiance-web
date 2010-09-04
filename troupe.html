@@ -1,0 +1,119 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script type="text/javascript" src="jquery-1.4.2.min.js"></script>
+        <script type="text/javascript">
+            function showDancers() {
+                hideAll();
+                $('#dancers').toggle(true);
+            }
+            function showHistory() {
+                hideAll();
+                $('#history').toggle(true);
+            }
+
+            function hideAll() {
+                $('td.content').children().toggle(false);
+            }
+        </script>
+    </head>
+
+    <body>
+        <table>
+            <tr class="header"></tr>
+
+            <tr class="main">
+                <td class="content">
+                    <div id="dancers">
+                        <h2>Dancers</h2>
+
+                        <p>Company members proudly represent Columbia University and Chinese Students Club as they perform on and off campus. Auditions are held throughout the year. Be on the lookout for audition dates on the website.</p>
+
+                        <table class="dancers">
+                            <tr>
+                                <td style="vertical-align: top; border: 5px solid black">
+                                    <h3>2008-2009 Season</h3>
+
+                                    Amanda Phingbodhipakkiya<br>
+                                    Christina Tzeng<br>
+                                    Jessica Guo<br>
+                                    Rebecca Tang<br>
+                                    Connie Liu<br>
+                                    Nina Zhang<br>
+                                    <br>
+                                </td>
+
+                                <td style="vertical-align: top; border: 5px solid black">
+                                    <h3>2007-2008 Season</h3>
+
+                                    Amanda Phingbodhipakkiya<br>
+                                    Angela Lu<br>
+                                    Christina Tzeng<br>
+                                    Ellen Wuu<br>
+                                    Jessica Guo<br>
+                                    Rebecca Tang<br>
+                                    <br>
+                                </td>
+
+                                <td style="vertical-align: top; border: 5px solid black">
+                                    <h3>2006-2007 Season</h3>
+
+                                    Amanda Phingbodhipakkiya<br>
+                                    Angela Lu<br>
+                                    Christina Tzeng<br>
+                                    Diana Hsu<br>
+                                    Ellen Wuu<br>
+                                    Jennifer Chen<br>
+                                    Jennifer Hu<br>
+                                    Jessica Guo<br>
+                                    Lillian Lam<br>
+                                    Rebecca Tang<br>
+                                    <br>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <div id="history" style="display: none">
+                        <h2>History</h2>
+
+                        <p>Established in 2006, Radiance Chinese Dance Company has continued to perform classical, folk and contemporary Chinese dance at various Columbia University events. The company participates annually in CSC Night Market and Lunar Gala. Radiance has also performed for the Columbia Law School and the CollegeBoard National Conference at NYPL. The company's repertory includes "The Dai Umbrella Dance", "Flying Celestials", "The Peacock Dance" and "Liu Liu De Kang Ding, Liu Liu De Qing". </p>
+
+                        <p>Since its inception, the company has seen tremendous growth, and continues to broaden its appeal by sharing the richness of Chinese culture through dance. The future of Radiance is filled with much promise and talent.</p>
+                    </div>
+                </td>
+
+                <td class="navigation">
+                    <div class="title">
+                        <a href="index.html"><img src="images/radiance-text.png" alt="Radiance"></a>
+                    </div>
+                    <div style="height: 60px"></div>
+                    <div class="navigation">
+                        <a href="gallery.html">Gallery</a>
+                    </div>
+
+                    <div class="navigation">
+                        <a href="troupe.html">Troupe</a><br>
+                    </div>
+                    <div class="subnavigation">
+                        <a href="#" onclick="showDancers()">Dancers</a>
+                    </div>
+                    <div class="subnavigation">
+                        <a href="#" onclick="showHistory()">History</a>
+                    </div>
+
+                    <div class="navigation">
+                        <a href="contact.html">Contact</a>
+                    </div>
+                </td>
+            </tr>
+
+            <tr class="footer">
+                <td colspan="2" style="text-align:center">
+                    <div style="margin-top:60px">
+                        <a href=".."><img src="images/csc-logo.png" alt="Chinese Students Club" title="Chinese Students Club"></a>
+                    </div>
+                </td>
+            </tr>
+    </body>
+</html>
