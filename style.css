@@ -13,8 +13,6 @@ body {
     background-color: black;
     width: 920px;
     margin: 20px auto;
-    font-family: 'Gill Sans MT', Helvetica, sans-serif;
-    color: white;
 }
 
 tr.header {
@@ -34,12 +32,19 @@ td.navigation {
     vertical-align: top;
 }
 
+table {
+    font-family: 'Gill Sans MT', Helvetica, sans-serif;
+    color: white;
+}
+
 div.title {
     padding: 0px 20px 0px 0px;
     text-align: right;
 }
 div.content {
     width: 604px;
+    font-family: 'Gill Sans MT', Helvetica, sans-serif;
+    color: white;
 }
 div.navigation {
     padding: 10px 40px 10px 0px;
@@ -64,3 +69,42 @@ a.current {
 a.inlinelink {
     color: #4287d0;
 }
+
+/* ------------------------------------------------------------------------
+    Gallery
+    http://media.no-margin-for-errors.com/wp-content/themes/NMFE/style.css
+------------------------------------------------------------------------- */
+
+.gallery a {
+    background: none !important;
+    border: 1px #000 solid;
+    display: block;
+    height: 180px;
+    padding: 2px !important;
+    width: 240px;
+}
+
+.gallery a:hover { border-color: #1799A9; }
+
+ul.gallery {
+    list-style: none;
+    margin: 0 0 10px 0;
+}
+
+ul.gallery li {
+    display: block;
+    float: left;
+    margin: 0 5px 0 0;
+}
+
+ul.gallery a {
+    padding: 2px;
+    display: block;
+    border: 2px #000 solid;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    line-height: 0;
+}
+
+ul.gallery a:hover { border: 2px #999 solid; }
+

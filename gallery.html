@@ -1,0 +1,112 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
+
+	<link rel="stylesheet" href="css/prettyPhoto.css" type="text/css" media="screen" charset="utf-8" />
+	<script src="js/jquery.prettyPhoto.js" type="text/javascript" charset="utf-8"></script>
+        
+        <script type="text/javascript">
+            function showVideos() {
+                hideAll();
+                $('div#videos').toggle(true);
+                $('a#videos').addClass('current');
+            }
+            function showPhotos() {
+                hideAll();
+                $('div#photos').toggle(true);
+                $('a#photos').addClass('current');
+            }
+
+            function hideAll() {
+                $('td.content').children().toggle(false);
+                $('a.current').removeClass('current');
+            }
+        </script>
+    </head>
+
+    <body>
+	<script type="text/javascript" charset="utf-8">
+		$(document).ready(function(){
+			$("a[rel^='prettyPhoto']").prettyPhoto({ theme: 'dark_rounded', });
+		});
+	</script>
+	
+        <table>
+            <tr class="header"></tr>
+
+            <tr class="main">
+                <td class="content">
+                    <div id="videos" class="content">
+			<ul class="gallery">
+			    <li><a rel="prettyPhoto[videos]" href="http://www.youtube.com/watch?v=xdlQ3zf-N80" title="Chinese Umbrella Dance, Lunar Gala 2010"><img src="images/thumbnails/video_6.jpg" alt="Chinese Umbrella Dance, Lunar Gala 2010" width="240" height="180"></a></li>
+			    <li><a rel="prettyPhoto[videos]" href="http://www.youtube.com/watch?v=PoWSd9nURMc" title="Ribbon Dance, Lunar Gala 2009"><img src="images/thumbnails/video_5.jpg" alt="Ribbon Dance, Lunar Gala 2009" width="240" height="180"></a></li>
+			    <li><a rel="prettyPhoto[videos]" href="http://www.youtube.com/watch?v=BisUOpdQj3s" title="Tibet Dance, Lunar Gala 2009"><img src="images/thumbnails/video_4.jpg" alt="Tibet Dance, Lunar Gala 2009" width="240" height="180"></a></li>
+			    <li><a rel="prettyPhoto[videos]" href="http://www.youtube.com/watch?v=QTwsXJPEeH0" title="Ta Ge, Arise Benefit Dinner 2008"><img src="images/thumbnails/video_3.jpg" alt="Ta Ge, Arise Benefit Dinner 2008" width="240" height="180"></a></li>
+			    <li><a rel="prettyPhoto[videos]" href="http://www.youtube.com/watch?v=mq_v7pCP_8E" title="Lunar Gala: Made in China (2008)"><img src="images/thumbnails/video_2.jpg" alt="Lunar Gala: Made in China (2008)" width="240" height="180"></a></li>
+			    <li><a rel="prettyPhoto[videos]" href="http://www.youtube.com/watch?v=5-8VNMO3Kds" title="Practice for Night Market 2006"><img src="images/thumbnails/video_1.jpg" alt="Practice for Night Market 2006" width="240" height="180"></a></li>
+			</ul>
+                    </div>
+
+                    <div id="photos" class="content" style="display: none">
+                        <h2>Directors</h2>
+
+                        <table class="photos">
+                            <tr>
+                                <td style="vertical-align: top; border: 5px solid black">
+                                    <h3>2008-2009 Season</h3>
+
+                                    Amanda Phingbodhipakkiya(10)<br>
+                                </td>
+
+                                <td style="vertical-align: top; border: 5px solid black">
+                                    <h3>2007-2008 Season</h3>
+
+                                    Ellen Wuu(08)<br>
+                                    Angela Lu(09)<br>
+                                    Amanda Phingbodhipakkiya(10)<br>
+                                </td>
+
+                                <td style="vertical-align: top; border: 5px solid black">
+                                    <h3>2006-2007 Season</h3>
+
+                                    Lillian Lam(07)<br>
+                                    Angela Lu(09)<br>
+                                    Amanda Phingbodhipakkiya(10)<br>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </td>
+
+                <td class="navigation">
+                    <div class="title">
+                        <a href="index.html"><img src="images/radiance-text.png" alt="Radiance"></a>
+                    </div>
+                    <div style="height: 60px"></div>
+
+                    <div class="navigation">
+                        <a href="gallery.html">Gallery</a>
+                    </div>
+                    <div class="subnavigation">
+                        <a href="#" id="videos" onclick="showVideos()" class="current">Videos</a>
+                    </div>
+                    <div class="subnavigation">
+                        <a href="#" id="photos" onclick="showPhotos()">Photos</a>
+                    </div>
+
+                    <div class="navigation">
+                        <a href="troupe.html">Troupe</a><br>
+                    </div>
+                    <div class="navigation">
+                        <a href="contact.html">Contact</a>
+                    </div>
+                </td>
+            </tr>
+
+            <tr class="footer">
+                <td colspan="2" style="text-align:center">
+                </td>
+            </tr>
+    </body>
+</html>
