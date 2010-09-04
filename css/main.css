@@ -1,27 +1,43 @@
 body {
+    /*
     background: url(../images/gradient-black-green.png) repeat-x;
+    background-color: #08200e;
+    */
+    /*
     background-color: #0d3518;
-    width: 700px;
+    */
+    /*
+    background: url(../images/gradient-black-darkred.png) repeat-x;
+    background-color: #23050d;
+    */
+    background-color: black;
+    width: 920px;
     margin: 20px auto;
-    font: 300%/100% 'Gill Sans MT', Helvetica, sans-serif;
-    color: white;
 }
 
 tr.top {
-    height: 100px;
+    height: 80px;
 }
 
 td.navigation {
-    font: 300%/100% 'Gill Sans MT', Helvetica, sans-serif;
+    font: 250%/100% 'Gill Sans MT', Helvetica, sans-serif;
     color: white;
 }
 
+div.title {
+    padding: 0px 20px 0px 0px;
+    text-align: right;
+}
 div.navigation {
-    padding: 10px 120px;
+    padding: 10px 40px 10px 0px;
     text-align: right;
 }
 
 a {
     color: white;
     text-decoration: none;
+}
+
+a:hover {
+    font-weight: bold;
 }
