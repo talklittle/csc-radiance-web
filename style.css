@@ -24,6 +24,11 @@ td.navigation {
     color: white;
 }
 
+tr.footer {
+    font: 150%/100% 'Gill Sans MT', Helvetica, sans-serif;
+    color: white;
+}
+
 div.title {
     padding: 0px 20px 0px 0px;
     text-align: right;
