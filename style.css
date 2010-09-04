@@ -38,6 +38,9 @@ div.title {
     padding: 0px 20px 0px 0px;
     text-align: right;
 }
+div.content {
+    width: 604px;
+}
 div.navigation {
     padding: 10px 40px 10px 0px;
     text-align: right;

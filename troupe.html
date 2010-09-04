@@ -7,6 +7,10 @@
                 hideAll();
                 $('#dancers').toggle(true);
             }
+            function showTeam() {
+                hideAll();
+                $('#team').toggle(true);
+            }
             function showHistory() {
                 hideAll();
                 $('#history').toggle(true);
@@ -24,7 +28,7 @@
 
             <tr class="main">
                 <td class="content">
-                    <div id="dancers">
+                    <div id="dancers" class="content">
                         <h2>Dancers</h2>
 
                         <p>Company members proudly represent Columbia University and Chinese Students Club as they perform on and off campus. Auditions are held throughout the year. Be on the lookout for audition dates on the website.</p>
@@ -74,7 +78,37 @@
                         </table>
                     </div>
 
-                    <div id="history" style="display: none">
+                    <div id="team" class="content" style="display: none">
+                        <h2>Directors</h2>
+
+                        <table class="team">
+                            <tr>
+                                <td style="vertical-align: top; border: 5px solid black">
+                                    <h3>2008-2009 Season</h3>
+
+                                    Amanda Phingbodhipakkiya(10)<br>
+                                </td>
+
+                                <td style="vertical-align: top; border: 5px solid black">
+                                    <h3>2007-2008 Season</h3>
+
+                                    Ellen Wuu(08)<br>
+                                    Angela Lu(09)<br>
+                                    Amanda Phingbodhipakkiya(10)<br>
+                                </td>
+
+                                <td style="vertical-align: top; border: 5px solid black">
+                                    <h3>2006-2007 Season</h3>
+
+                                    Lillian Lam(07)<br>
+                                    Angela Lu(09)<br>
+                                    Amanda Phingbodhipakkiya(10)<br>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <div id="history" class="content" style="display: none">
                         <h2>History</h2>
 
                         <p>Established in 2006, Radiance Chinese Dance Company has continued to perform classical, folk and contemporary Chinese dance at various Columbia University events. The company participates annually in CSC Night Market and Lunar Gala. Radiance has also performed for the Columbia Law School and the CollegeBoard National Conference at NYPL. The company's repertory includes "The Dai Umbrella Dance", "Flying Celestials", "The Peacock Dance" and "Liu Liu De Kang Ding, Liu Liu De Qing". </p>
@@ -99,6 +133,9 @@
                         <a href="#" onclick="showDancers()">Dancers</a>
                     </div>
                     <div class="subnavigation">
+                        <a href="#" onclick="showTeam()">Team</a>
+                    </div>
+                    <div class="subnavigation">
                         <a href="#" onclick="showHistory()">History</a>
                     </div>
 
@@ -110,9 +147,6 @@
 
             <tr class="footer">
                 <td colspan="2" style="text-align:center">
-                    <div style="margin-top:60px">
-                        <a href=".."><img src="images/csc-logo.png" alt="Chinese Students Club" title="Chinese Students Club"></a>
-                    </div>
                 </td>
             </tr>
     </body>
