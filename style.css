@@ -1,13 +1,13 @@
 body {
     /*
-    background: url(../images/gradient-black-green.png) repeat-x;
+    background: url(images/gradient-black-green.png) repeat-x;
     background-color: #08200e;
     */
     /*
     background-color: #0d3518;
     */
     /*
-    background: url(../images/gradient-black-darkred.png) repeat-x;
+    background: url(images/gradient-black-darkred.png) repeat-x;
     background-color: #23050d;
     */
     background-color: black;
@@ -15,7 +15,7 @@ body {
     margin: 20px auto;
 }
 
-tr.top {
+tr.header {
     height: 80px;
 }
 
