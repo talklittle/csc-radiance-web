@@ -5,19 +5,23 @@
         <script type="text/javascript">
             function showDancers() {
                 hideAll();
-                $('#dancers').toggle(true);
+                $('div#dancers').toggle(true);
+                $('a#dancers').addClass('current');
             }
             function showTeam() {
                 hideAll();
-                $('#team').toggle(true);
+                $('div#team').toggle(true);
+                $('a#team').addClass('current');
             }
             function showHistory() {
                 hideAll();
-                $('#history').toggle(true);
+                $('div#history').toggle(true);
+                $('a#history').addClass('current');
             }
 
             function hideAll() {
                 $('td.content').children().toggle(false);
+                $('a.current').removeClass('current');
             }
         </script>
     </head>
@@ -130,13 +134,13 @@
                         <a href="troupe.html">Troupe</a><br>
                     </div>
                     <div class="subnavigation">
-                        <a href="#" onclick="showDancers()">Dancers</a>
+                        <a href="#" id="dancers" class="current" onclick="showDancers()">Dancers</a>
                     </div>
                     <div class="subnavigation">
-                        <a href="#" onclick="showTeam()">Team</a>
+                        <a href="#" id="team" onclick="showTeam()">Team</a>
                     </div>
                     <div class="subnavigation">
-                        <a href="#" onclick="showHistory()">History</a>
+                        <a href="#" id="history" onclick="showHistory()">History</a>
                     </div>
 
                     <div class="navigation">

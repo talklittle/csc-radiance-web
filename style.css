@@ -55,7 +55,9 @@ a {
     color: white;
     text-decoration: none;
 }
-
 a:hover {
     font-weight: bold;
+}
+a.current {
+    color: yellow;
 }
