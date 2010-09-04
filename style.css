@@ -61,3 +61,6 @@ a:hover {
 a.current {
     color: yellow;
 }
+a.inlinelink {
+    color: #4287d0;
+}
