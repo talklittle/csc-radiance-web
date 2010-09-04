@@ -27,10 +27,22 @@
     </head>
 
     <body>
-        <table>
-            <tr class="header"></tr>
+        <table class="main">
+            <col id="leftborder"></col>
+	    <col id="content"></col>
+	    <col id="navigation"></col>
+	    <col id="rightborder"></col>
+
+            <tr class="header">
+                <td class="leftborder"></td>
+                <td></td>
+                <td></td>
+                <td class="rightborder"></td>
+            </tr>
 
             <tr class="main">
+                <td class="leftborder"></td>
+
                 <td class="content">
                     <div id="dancers" class="content">
                         <h2>Dancers</h2>
@@ -39,7 +51,7 @@
 
                         <table class="dancers">
                             <tr>
-                                <td style="vertical-align: top; border: 5px solid black">
+                                <td style="vertical-align: top; border: 5px solid transparent">
                                     <h3>2008-2009 Season</h3>
 
                                     Amanda Phingbodhipakkiya<br>
@@ -51,7 +63,7 @@
                                     <br>
                                 </td>
 
-                                <td style="vertical-align: top; border: 5px solid black">
+                                <td style="vertical-align: top; border: 5px solid transparent">
                                     <h3>2007-2008 Season</h3>
 
                                     Amanda Phingbodhipakkiya<br>
@@ -63,7 +75,7 @@
                                     <br>
                                 </td>
 
-                                <td style="vertical-align: top; border: 5px solid black">
+                                <td style="vertical-align: top; border: 5px solid transparent">
                                     <h3>2006-2007 Season</h3>
 
                                     Amanda Phingbodhipakkiya<br>
@@ -87,13 +99,13 @@
 
                         <table class="team">
                             <tr>
-                                <td style="vertical-align: top; border: 5px solid black">
+                                <td style="vertical-align: top; border: 5px solid transparent">
                                     <h3>2008-2009 Season</h3>
 
                                     Amanda Phingbodhipakkiya(10)<br>
                                 </td>
 
-                                <td style="vertical-align: top; border: 5px solid black">
+                                <td style="vertical-align: top; border: 5px solid transparent">
                                     <h3>2007-2008 Season</h3>
 
                                     Ellen Wuu(08)<br>
@@ -101,7 +113,7 @@
                                     Amanda Phingbodhipakkiya(10)<br>
                                 </td>
 
-                                <td style="vertical-align: top; border: 5px solid black">
+                                <td style="vertical-align: top; border: 5px solid transparent">
                                     <h3>2006-2007 Season</h3>
 
                                     Lillian Lam(07)<br>
@@ -127,11 +139,11 @@
                     </div>
                     <div style="height: 60px"></div>
                     <div class="navigation">
-                        <a href="gallery.html">Gallery</a>
+			<a href="gallery.html">Gallery</a>
                     </div>
 
                     <div class="navigation">
-                        <a href="troupe.html">Troupe</a><br>
+			<a href="troupe.html">Troupe</a><br>
                     </div>
                     <div class="subnavigation">
                         <a href="#" id="dancers" class="current" onclick="showDancers()">Dancers</a>
@@ -144,14 +156,19 @@
                     </div>
 
                     <div class="navigation">
-                        <a href="contact.html">Contact</a>
+			<a href="contact.html">Contact</a>
                     </div>
                 </td>
+
+                <td class="rightborder"></td>
             </tr>
 
             <tr class="footer">
+                <td class="leftborder"></td>
                 <td colspan="2" style="text-align:center">
                 </td>
+		<td></td>
+                <td class="rightborder"></td>
             </tr>
     </body>
 </html>

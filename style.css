@@ -11,16 +11,16 @@ body {
     background-color: #23050d;
     */
     background-color: black;
-    width: 920px;
-    margin: 20px auto;
+    margin: 0px auto;
 }
 
 tr.header {
-    height: 0px;
+    height: 20px;
 }
 tr.footer {
-    font: 150%/100% 'Gill Sans MT', Helvetica, sans-serif;
+    font: 130%/100% 'Gill Sans MT', Helvetica, sans-serif;
     color: white;
+    vertical-align: top;
 }
 tr.main {
     height: 600px;
@@ -30,7 +30,7 @@ tr.main {
 td.content {
 }
 td.navigation {
-    font: 250%/120% 'Gill Sans MT', Helvetica, sans-serif;
+    font: 200%/150% 'Gill Sans MT', Helvetica, sans-serif;
     color: white;
     vertical-align: top;
 }
@@ -38,6 +38,20 @@ td.navigation {
 table {
     font-family: 'Gill Sans MT', Helvetica, sans-serif;
     color: white;
+    border-collapse: collapse;
+}
+table.main {
+    height: 100%;
+    margin: 0px auto;
+    background-color: black;
+}
+
+col#leftborder {
+    width: 0px;
+}
+col#rightborder {
+    width: 20px;
+    background: url(images/border-side.png) repeat-y;
 }
 
 div.title {
@@ -111,4 +125,3 @@ ul.gallery a {
 }
 
 ul.gallery a:hover { border: 2px #999 solid; }
-
