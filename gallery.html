@@ -20,7 +20,7 @@
 
             function hideAll() {
                 $('td.content').children().toggle(false);
-                $('a.current').removeClass('current');
+                $('div.subnavigation a.current').removeClass('current');
             }
         </script>
     </head>
@@ -34,24 +34,72 @@
 	
         <table class="main">
             <col id="leftborder"></col>
-	    <col id="content"></col>
-	    <col id="navigation"></col>
+	    <col></col>
 	    <col id="rightborder"></col>
 
             <tr class="header">
                 <td class="leftborder"></td>
-                <td></td>
-                <td></td>
+                <td class="title">
+                    <a href="index.html"><img src="images/n101295_31849085_4399-crop.jpg" style="display: block; margin: 0px auto" alt="Radiance"></a>
+                    <a href="index.html"><img src="images/radiance-text.png" style="display: block; margin: 0px auto" alt="Radiance"></a>
+                </td>
                 <td class="rightborder"></td>
             </tr>
 
-            <tr class="main">
+            <tr class="navigation">
                 <td class="leftborder"></td>
 
-                <td class="content">
-                    <div id="videos" class="content">
-			<h1>Videos</h1>
+                <td>
+                    <table id="navigation">
+                        <tr>
+                            <td class="navigation">
+                                <div class="navigation">
+                                    <a href="gallery.html" class="current">Gallery</a>
+                                </div>
+                            </td>
+                            <td class="navigation">
+                                <div class="navigation">
+                                    <a href="troupe.html">Troupe</a>
+                                </div>
+                            </td>
+                            <td class="navigation">
+                                <div class="navigation">
+                                    <a href="contact.html">Contact</a>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
 
+                <td class="rightborder"></td>
+            </tr>
+
+	    <tr class="subnavigation">
+		<td class="leftborder"></td>
+
+		<td>
+		    <table id="subnavigation">
+			<tr>
+			    <td class="subnavigation">
+				<div class="subnavigation">
+				    <a href="#" id="videos" onclick="showVideos()" class="current">Videos</a>
+				</div>
+			    </td>
+			    <td class="subnavigation">
+				<div class="subnavigation">
+				    <a href="#" id="photos" onclick="showPhotos()">Photos</a>
+				</div>
+			    </td>
+			</tr>
+		    </table>
+		</td>
+                <td class="rightborder"></td>
+	    </tr>
+
+            <tr class="content">
+                <td class="leftborder"></td>
+                <td class="content">
+                    <div id="videos" class="content" style="width: 560px; padding: 30px 0px">
 			<ul class="gallery">
 			    <li><a rel="prettyPhoto[videos]" href="http://www.youtube.com/watch?v=xdlQ3zf-N80" title="Chinese Umbrella Dance, Lunar Gala 2010"><img src="images/thumbnails/video_6.jpg" alt="Chinese Umbrella Dance, Lunar Gala 2010" width="240" height="180"></a></li>
 			    <li><a rel="prettyPhoto[videos]" href="http://www.youtube.com/watch?v=PoWSd9nURMc" title="Ribbon Dance, Lunar Gala 2009"><img src="images/thumbnails/video_5.jpg" alt="Ribbon Dance, Lunar Gala 2009" width="240" height="180"></a></li>
@@ -62,70 +110,33 @@
 			</ul>
                     </div>
 
-                    <div id="photos" class="content" style="display: none">
-                        <h2>Directors</h2>
-
-                        <table class="photos">
-                            <tr>
-                                <td style="vertical-align: top; border: 5px solid transparent">
-                                    <h3>2008-2009 Season</h3>
-
-                                    Amanda Phingbodhipakkiya(10)<br>
-                                </td>
-
-                                <td style="vertical-align: top; border: 5px solid transparent">
-                                    <h3>2007-2008 Season</h3>
-
-                                    Ellen Wuu(08)<br>
-                                    Angela Lu(09)<br>
-                                    Amanda Phingbodhipakkiya(10)<br>
-                                </td>
-
-                                <td style="vertical-align: top; border: 5px solid transparent">
-                                    <h3>2006-2007 Season</h3>
-
-                                    Lillian Lam(07)<br>
-                                    Angela Lu(09)<br>
-                                    Amanda Phingbodhipakkiya(10)<br>
-                                </td>
-                            </tr>
-                        </table>
-                    </div>
+                    <div id="photos" class="content" style="display: none; width: 600px; padding: 30px 0px">
+			<ul class="gallery">
+			    <li><a rel="prettyPhoto[photos]" href="images/fullscreen/13.jpg" title="Lunar Gala 2008" style="width: 120px; height: 80px"><img src="images/thumbnails/photo_13.jpg" alt="Lunar Gala 2008" width="120" height="80"></a></li>
+			    <li><a rel="prettyPhoto[photos]" href="images/fullscreen/12.jpg" title="Lunar Gala 2008" style="width: 120px; height: 80px"><img src="images/thumbnails/photo_12.jpg" alt="Lunar Gala 2008" width="120" height="80"></a></li>
+			    <li><a rel="prettyPhoto[photos]" href="images/fullscreen/11.jpg" title="Lunar Gala 2008" style="width: 120px; height: 80px"><img src="images/thumbnails/photo_11.jpg" alt="Lunar Gala 2008" width="120" height="80"></a></li>
+			    <li><a rel="prettyPhoto[photos]" href="images/fullscreen/10.jpg" title="Lunar Gala 2008" style="width: 120px; height: 80px"><img src="images/thumbnails/photo_10.jpg" alt="Lunar Gala 2008" width="120" height="80"></a></li>
+			    <li><a rel="prettyPhoto[photos]" href="images/fullscreen/9.jpg" title="Lunar Gala 2008" style="width: 120px; height: 80px"><img src="images/thumbnails/photo_9.jpg" alt="Lunar Gala 2008" width="120" height="80"></a></li>
+			    <li><a rel="prettyPhoto[photos]" href="images/fullscreen/8.jpg" title="Lunar Gala 2008" style="width: 120px; height: 80px"><img src="images/thumbnails/photo_8.jpg" alt="Lunar Gala 2008" width="120" height="80"></a></li>
+			    <li><a rel="prettyPhoto[photos]" href="images/fullscreen/7.jpg" title="Lunar Gala 2008" style="width: 120px; height: 80px"><img src="images/thumbnails/photo_7.jpg" alt="Lunar Gala 2008" width="120" height="80"></a></li>
+			    <li><a rel="prettyPhoto[photos]" href="images/fullscreen/6.jpg" title="Lunar Gala 2008" style="width: 120px; height: 80px"><img src="images/thumbnails/photo_6.jpg" alt="Lunar Gala 2008" width="120" height="80"></a></li>
+			    <li><a rel="prettyPhoto[photos]" href="images/fullscreen/5.jpg" title="Lunar Gala 2008" style="width: 120px; height: 80px"><img src="images/thumbnails/photo_5.jpg" alt="Lunar Gala 2008" width="120" height="80"></a></li>
+			    <li><a rel="prettyPhoto[photos]" href="images/fullscreen/4.jpg" title="Lunar Gala 2008" style="width: 120px; height: 80px"><img src="images/thumbnails/photo_4.jpg" alt="Lunar Gala 2008" width="120" height="80"></a></li>
+			    <li><a rel="prettyPhoto[photos]" href="images/fullscreen/3.jpg" title="Lunar Gala 2008" style="width: 120px; height: 80px"><img src="images/thumbnails/photo_3.jpg" alt="Lunar Gala 2008" width="120" height="80"></a></li>
+			    <li><a rel="prettyPhoto[photos]" href="images/fullscreen/2.jpg" title="Lunar Gala 2008" style="width: 120px; height: 80px"><img src="images/thumbnails/photo_2.jpg" alt="Lunar Gala 2008" width="120" height="80"></a></li>
+			    <li><a rel="prettyPhoto[photos]" href="images/fullscreen/1.jpg" title="Lunar Gala 2008" style="width: 120px; height: 80px"><img src="images/thumbnails/photo_1.jpg" alt="Lunar Gala 2008" width="120" height="80"></a></li>
+			</ul>
+		    </div>
                 </td>
-
-                <td class="navigation">
-                    <div class="title">
-                        <a href="index.html"><img src="images/radiance-text.png" alt="Radiance"></a>
-                    </div>
-                    <div style="height: 60px"></div>
-
-                    <div class="navigation">
-                        <a href="gallery.html">Gallery</a>
-                    </div>
-                    <div class="subnavigation">
-                        <a href="#" id="videos" onclick="showVideos()" class="current">Videos</a>
-                    </div>
-                    <div class="subnavigation">
-                        <a href="#" id="photos" onclick="showPhotos()">Photos</a>
-                    </div>
-
-                    <div class="navigation">
-                        <a href="troupe.html">Troupe</a><br>
-                    </div>
-                    <div class="navigation">
-                        <a href="contact.html">Contact</a>
-                    </div>
-                </td>
-
-                <td class="rightborder"></td>
+		<td class="rightborder"></td>
             </tr>
 
             <tr class="footer">
                 <td class="leftborder"></td>
-                <td colspan="2" style="text-align:center">
+                <td style="text-align:center">
                 </td>
-		<td></td>
                 <td class="rightborder"></td>
             </tr>
+        </table>
     </body>
 </html>

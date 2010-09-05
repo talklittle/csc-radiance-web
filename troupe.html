@@ -21,7 +21,7 @@
 
             function hideAll() {
                 $('td.content').children().toggle(false);
-                $('a.current').removeClass('current');
+                $('div.subnavigation a.current').removeClass('current');
             }
         </script>
     </head>
@@ -29,20 +29,75 @@
     <body>
         <table class="main">
             <col id="leftborder"></col>
-	    <col id="content"></col>
-	    <col id="navigation"></col>
+	    <col></col>
 	    <col id="rightborder"></col>
 
             <tr class="header">
                 <td class="leftborder"></td>
-                <td></td>
-                <td></td>
+                <td class="title">
+                    <a href="index.html"><img src="images/n101295_31849085_4399-crop.jpg" style="display: block; margin: 0px auto" alt="Radiance"></a>
+                    <a href="index.html"><img src="images/radiance-text.png" style="display: block; margin: 0px auto" alt="Radiance"></a>
+                </td>
                 <td class="rightborder"></td>
             </tr>
 
-            <tr class="main">
+            <tr class="navigation">
                 <td class="leftborder"></td>
 
+                <td>
+                    <table id="navigation">
+                        <tr>
+                            <td class="navigation">
+                                <div class="navigation">
+                                    <a href="gallery.html">Gallery</a>
+                                </div>
+                            </td>
+                            <td class="navigation">
+                                <div class="navigation">
+                                    <a href="troupe.html" class="current">Troupe</a>
+                                </div>
+                            </td>
+                            <td class="navigation">
+                                <div class="navigation">
+                                    <a href="contact.html">Contact</a>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+
+                <td class="rightborder"></td>
+            </tr>
+
+	    <tr class="subnavigation">
+		<td class="leftborder"></td>
+
+		<td>
+		    <table id="subnavigation">
+			<tr>
+			    <td class="subnavigation">
+				<div class="subnavigation">
+				    <a href="#" id="dancers" onclick="showDancers()" class="current">Dancers</a>
+				</div>
+			    </td>
+			    <td class="subnavigation">
+				<div class="subnavigation">
+				    <a href="#" id="team" onclick="showTeam()">Team</a>
+				</div>
+			    </td>
+			    <td class="subnavigation">
+				<div class="subnavigation">
+				    <a href="#" id="history" onclick="showHistory()">History</a>
+				</div>
+			    </td>
+			</tr>
+		    </table>
+		</td>
+                <td class="rightborder"></td>
+	    </tr>
+
+            <tr class="content">
+                <td class="leftborder"></td>
                 <td class="content">
                     <div id="dancers" class="content">
                         <h2>Dancers</h2>
@@ -132,43 +187,15 @@
                         <p>Since its inception, the company has seen tremendous growth, and continues to broaden its appeal by sharing the richness of Chinese culture through dance. The future of Radiance is filled with much promise and talent.</p>
                     </div>
                 </td>
-
-                <td class="navigation">
-                    <div class="title">
-                        <a href="index.html"><img src="images/radiance-text.png" alt="Radiance"></a>
-                    </div>
-                    <div style="height: 60px"></div>
-                    <div class="navigation">
-			<a href="gallery.html">Gallery</a>
-                    </div>
-
-                    <div class="navigation">
-			<a href="troupe.html">Troupe</a><br>
-                    </div>
-                    <div class="subnavigation">
-                        <a href="#" id="dancers" class="current" onclick="showDancers()">Dancers</a>
-                    </div>
-                    <div class="subnavigation">
-                        <a href="#" id="team" onclick="showTeam()">Team</a>
-                    </div>
-                    <div class="subnavigation">
-                        <a href="#" id="history" onclick="showHistory()">History</a>
-                    </div>
-
-                    <div class="navigation">
-			<a href="contact.html">Contact</a>
-                    </div>
-                </td>
-
                 <td class="rightborder"></td>
             </tr>
 
             <tr class="footer">
                 <td class="leftborder"></td>
-                <td colspan="2" style="text-align:center">
+                <td style="text-align:center">
                 </td>
-		<td></td>
                 <td class="rightborder"></td>
             </tr>
+        </table>
     </body>
 </html>

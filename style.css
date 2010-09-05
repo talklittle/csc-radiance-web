@@ -10,27 +10,36 @@ body {
     background: url(images/gradient-black-darkred.png) repeat-x;
     background-color: #23050d;
     */
-    background-color: #050505;
+    background-color: #0a0a0a;
     margin: 0px auto;
 }
 
 tr.header {
-    height: 20px;
+    height: 340px;
 }
 tr.footer {
     font: 110%/100% 'Gill Sans MT', Helvetica, sans-serif;
     vertical-align: top;
 }
-tr.main {
-    height: 600px;
+tr.content {
+    font: 110%/100% 'Gill Sans MT', Helvetica, sans-serif;
+    margin: 0px auto;
     vertical-align: top;
+}
+tr.navigation {
+    height: 50px;
+    width: 100%;
 }
 
 td {
     color: #bbb;
+    vertical-align: top;
 }
 td.navigation {
-    vertical-align: top;
+}
+td.title {
+}
+td.content {
 }
 
 table {
@@ -42,32 +51,57 @@ table.main {
     margin: 0px auto;
     background-color: black;
 }
+table#navigation {
+    background-color: #222;
+    width: 520px;
+    margin: 0px auto;
+    text-align: center;
+}
+table#subnavigation {
+    background-color: #161616;
+    width: 520px;
+    margin: 0px auto;
+    text-align: center;
+}
 
 col#leftborder {
     width: 0px;
+    visibility: collapse;
+    display: none;
 }
 col#rightborder {
-    width: 20px;
-    background: url(images/border-side.png) repeat-y;
+    width: 0px;
+    visibility: collapse;
+    display: none;
+    /* background: url(images/border-side.png) repeat-y; */
+}
+.leftborder {
+    width: 0px;
+    visibility: collapse;
+    display: none;
+}
+.rightborder {
+    width: 0px;
+    visibility: collapse;
+    display: none;
 }
 
 div.title {
-    padding: 0px 20px 0px 0px;
+    padding: 0px;
     text-align: center;
 }
 div.content {
-    width: 604px;
-    padding-top: 80px;
+    width: 520px;
+    margin: 0px auto;
+    padding: 30px 20px;
     font-family: 'Gill Sans MT', Helvetica, sans-serif;
 }
 div.navigation {
-    padding: 10px 40px 10px 0px;
-    text-align: right;
+    padding: 10px 20px;
     font: 150%/150% 'Gill Sans MT', Helvetica, sans-serif;
 }
 div.subnavigation {
-    padding: 10px 40px 10px 0px;
-    text-align: right;
+    padding: 10px 0px;
     font: 100%/100% 'Gill Sans MT', Helvetica, sans-serif;
 }
 
@@ -86,13 +120,16 @@ a {
     text-decoration: none;
 }
 a:hover {
-    font-weight: bold;
+    color: #42b0e0;
 }
 a.current {
     color: yellow;
 }
 a.inlinelink {
     color: #4287d0;
+}
+a.inlinelink:hover {
+    color: #42b0e0;
 }
 
 /* ------------------------------------------------------------------------
