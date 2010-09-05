@@ -116,20 +116,29 @@ h3 {
 }
 
 a {
-    color: #ddd;
+    color: #4287d0;
     text-decoration: none;
 }
 a:hover {
     color: #42b0e0;
 }
-a.current {
+.navigation a {
+    color: #ddd;
+}
+.navigation a:hover {
+    color: #42b0e0;
+}
+.navigation a.current {
     color: yellow;
 }
-a.inlinelink {
-    color: #4287d0;
+.subnavigation a {
+    color: #ddd;
 }
-a.inlinelink:hover {
+.subnavigation a:hover {
     color: #42b0e0;
+}
+.subnavigation a.current {
+    color: yellow;
 }
 
 /* ------------------------------------------------------------------------
