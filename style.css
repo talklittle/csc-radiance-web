@@ -10,7 +10,7 @@ body {
     background: url(images/gradient-black-darkred.png) repeat-x;
     background-color: #23050d;
     */
-    background-color: #0a0a0a;
+    background-color: #111;
     margin: 0px auto;
 }
 
@@ -52,13 +52,13 @@ table.main {
     background-color: black;
 }
 table#navigation {
-    background-color: #222;
+    background-color: #333;
     width: 520px;
     margin: 0px auto;
     text-align: center;
 }
 table#subnavigation {
-    background-color: #161616;
+    background-color: #222;
     width: 520px;
     margin: 0px auto;
     text-align: center;
