@@ -18,11 +18,11 @@ tr.header {
     height: 340px;
 }
 tr.footer {
-    font: 110%/100% 'Gill Sans MT', Helvetica, sans-serif;
+    font: 100%/100% 'Gill Sans MT', Helvetica, sans-serif;
     vertical-align: top;
 }
 tr.content {
-    font: 110%/100% 'Gill Sans MT', Helvetica, sans-serif;
+    font: 100%/100% 'Gill Sans MT', Helvetica, sans-serif;
     margin: 0px auto;
     vertical-align: top;
 }
@@ -91,7 +91,7 @@ div.title {
     text-align: center;
 }
 div.content {
-    width: 520px;
+    width: 600px;
     margin: 0px auto;
     padding: 30px 20px;
     font-family: 'Gill Sans MT', Helvetica, sans-serif;
