@@ -141,6 +141,10 @@ a:hover {
     color: yellow;
 }
 
+img {
+    border: 0px;
+}
+
 /* ------------------------------------------------------------------------
     Gallery
     http://media.no-margin-for-errors.com/wp-content/themes/NMFE/style.css
