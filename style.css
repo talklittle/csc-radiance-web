@@ -10,7 +10,7 @@ body {
     background: url(images/gradient-black-darkred.png) repeat-x;
     background-color: #23050d;
     */
-    background-color: black;
+    background-color: #050505;
     margin: 0px auto;
 }
 
@@ -18,8 +18,7 @@ tr.header {
     height: 20px;
 }
 tr.footer {
-    font: 130%/100% 'Gill Sans MT', Helvetica, sans-serif;
-    color: white;
+    font: 110%/100% 'Gill Sans MT', Helvetica, sans-serif;
     vertical-align: top;
 }
 tr.main {
@@ -27,17 +26,15 @@ tr.main {
     vertical-align: top;
 }
 
-td.content {
+td {
+    color: #bbb;
 }
 td.navigation {
-    font: 200%/150% 'Gill Sans MT', Helvetica, sans-serif;
-    color: white;
     vertical-align: top;
 }
 
 table {
     font-family: 'Gill Sans MT', Helvetica, sans-serif;
-    color: white;
     border-collapse: collapse;
 }
 table.main {
@@ -56,26 +53,36 @@ col#rightborder {
 
 div.title {
     padding: 0px 20px 0px 0px;
-    text-align: right;
+    text-align: center;
 }
 div.content {
     width: 604px;
     padding-top: 80px;
     font-family: 'Gill Sans MT', Helvetica, sans-serif;
-    color: white;
 }
 div.navigation {
     padding: 10px 40px 10px 0px;
     text-align: right;
+    font: 150%/150% 'Gill Sans MT', Helvetica, sans-serif;
 }
 div.subnavigation {
     padding: 10px 40px 10px 0px;
     text-align: right;
-    font: 60%/100% 'Gill Sans MT', Helvetica, sans-serif;
+    font: 100%/100% 'Gill Sans MT', Helvetica, sans-serif;
+}
+
+h1 {
+    color: #eee;
+}
+h2 {
+    color: #eee;
+}
+h3 {
+    color: #eee;
 }
 
 a {
-    color: white;
+    color: #ddd;
     text-decoration: none;
 }
 a:hover {
