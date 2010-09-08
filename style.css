@@ -155,9 +155,8 @@ img {
     background: none !important;
     border: 1px #000 solid;
     display: block;
-    height: 180px;
     padding: 2px !important;
-    width: 240px;
+    width: 120px;
 }
 
 .gallery a:hover { border-color: #1799A9; }
