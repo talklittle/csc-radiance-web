@@ -12,6 +12,11 @@
                 $('div#videos').toggle(true);
                 $('a#videos').addClass('current');
             }
+            function showUpcoming() {
+                hideAll();
+                $('div#upcoming').toggle(true);
+                $('a#upcoming').addClass('current');
+            }
             function showPhotos() {
                 hideAll();
                 $('div#photos').toggle(true);
@@ -87,6 +92,11 @@
 			    </td>
 			    <td class="subnavigation">
 				<div class="subnavigation">
+				    <a href="#" id="upcoming" onclick="showUpcoming()">Upcoming</a>
+				</div>
+			    </td>
+			    <td class="subnavigation">
+				<div class="subnavigation">
 				    <a href="#" id="photos" onclick="showPhotos()">Photos</a>
 				</div>
 			    </td>
@@ -101,14 +111,28 @@
                 <td class="content">
                     <div id="videos" class="content" style="padding: 30px 0px">
 			<ul class="gallery">
-			    <li><a rel="prettyPhoto[videos]" href="http://www.youtube.com/watch?v=xdlQ3zf-N80" title="Chinese Umbrella Dance, Lunar Gala 2010" style="width: 120px; height: 90px"><img src="images/thumbnails/video_6.jpg" alt="Chinese Umbrella Dance, Lunar Gala 2010" width="120" height="90"></a></li>
-			    <li><a rel="prettyPhoto[videos]" href="http://www.youtube.com/watch?v=PoWSd9nURMc" title="Ribbon Dance, Lunar Gala 2009" style="width: 120px; height: 90px"><img src="images/thumbnails/video_5.jpg" alt="Ribbon Dance, Lunar Gala 2009" width="120" height="90"></a></li>
-			    <li><a rel="prettyPhoto[videos]" href="http://www.youtube.com/watch?v=BisUOpdQj3s" title="Tibet Dance, Lunar Gala 2009" style="width: 120px; height: 90px"><img src="images/thumbnails/video_4.jpg" alt="Tibet Dance, Lunar Gala 2009" width="120" height="90"></a></li>
-			    <li><a rel="prettyPhoto[videos]" href="http://www.youtube.com/watch?v=QTwsXJPEeH0" title="Ta Ge, Arise Benefit Dinner 2008" style="width: 120px; height: 90px"><img src="images/thumbnails/video_3.jpg" alt="Ta Ge, Arise Benefit Dinner 2008" width="120" height="90"></a></li>
-			    <li><a rel="prettyPhoto[videos]" href="http://www.youtube.com/watch?v=mq_v7pCP_8E" title="Lunar Gala: Made in China (2008)" style="width: 120px; height: 90px"><img src="images/thumbnails/video_2.jpg" alt="Lunar Gala: Made in China (2008)" width="120" height="90"></a></li>
-			    <li><a rel="prettyPhoto[videos]" href="http://www.youtube.com/watch?v=5-8VNMO3Kds" title="Practice for Night Market 2006" style="width: 120px; height: 90px"><img src="images/thumbnails/video_1.jpg" alt="Practice for Night Market 2006" width="120" height="90"></a></li>
+			    <li><a rel="prettyPhoto[videos]" href="http://www.youtube.com/watch?v=xdlQ3zf-N80" title="2010 Lunar Gala - &quot;Rain in a Small Town Lane&quot;" style="width: 120px; height: 90px"><img src="images/thumbnails/video_lg2010.jpg" alt="2010 Lunar Gala - &quot;Rain in a Small Town Lane&quot;" width="120" height="90"></a></li>
+			    <li><a rel="prettyPhoto[videos]" href="http://www.youtube.com/watch?v=PoWSd9nURMc" title="2009 Lunar Gala - Ribbon Dance" style="width: 120px; height: 90px"><img src="images/thumbnails/video_lg2009_ribbon.jpg" alt="2009 Lunar Gala - Ribbon Dance" width="120" height="90"></a></li>
+			    <li><a rel="prettyPhoto[videos]" href="http://www.youtube.com/watch?v=BisUOpdQj3s" title="2009 Lunar Gala - &quot;Tang Gu La Feng (唐古拉风)&quot;" style="width: 120px; height: 90px"><img src="images/thumbnails/video_lg2009_tang.jpg" alt="2009 Lunar Gala - &quot;Tang Gu La Feng (唐古拉风)&quot;" width="120" height="90"></a></li>
+			    <li><a rel="prettyPhoto[videos]" href="http://www.youtube.com/watch?v=QTwsXJPEeH0" title="Arise Benefit Dinner 2008 - &quot;Ta Ge&quot;" style="width: 120px; height: 90px"><img src="images/thumbnails/video_arise2008.jpg" alt="Arise Benefit Dinner 2008 - &quot;Ta Ge&quot;" width="120" height="90"></a></li>
+			    <li><a rel="prettyPhoto[videos]" href="http://www.youtube.com/watch?v=mq_v7pCP_8E" title="2008 Lunar Gala - &quot;Liu Liu De Kang Ding, Liu Liu De Qing (溜溜的康定,溜溜的情)&quot;" style="width: 120px; height: 90px"><img src="images/thumbnails/video_lg2008_liu.jpg" alt="2008 Lunar Gala - &quot;Liu Liu De Kang Ding, Liu Liu De Qing (溜溜的康定,溜溜的情)&quot;" width="120" height="90"></a></li>
+			    <li><a rel="prettyPhoto[videos]" href="http://www.youtube.com/watch?v=uzqRC_jjjk0" title="2008 Lunar Gala - &quot;A Stroll in the Countryside&quot;" style="width: 120px; height: 90px"><img src="images/thumbnails/video_lg2008_stroll.jpg" alt="2008 Lunar Gala - &quot;A Stroll in the Countryside&quot;" width="120" height="90"></a></li>
+			    <li><a rel="prettyPhoto[videos]" href="http://www.youtube.com/watch?v=4MZbqWgZ-vc" title="2007 Lunar Gala - &quot;Heavenly Goddesses&quot;" style="width: 120px; height: 90px"><img src="images/thumbnails/video_lg2007.jpg" alt="2007 Lunar Gala - &quot;Heavenly Goddesses&quot;" width="120" height="90"></a></li>
+			    <li><a rel="prettyPhoto[videos]" href="http://www.youtube.com/watch?v=nQ2taqGJ92A" title="Culture Shock 2006 - Umbrella Dance" style="width: 120px; height: 90px"><img src="images/thumbnails/video_cs2006.jpg" alt="Culture Shock 2006 - Umbrella Dance" width="120" height="90"></a></li>
+			    <li><a rel="prettyPhoto[videos]" href="http://www.youtube.com/watch?v=5-8VNMO3Kds" title="Practice for Culture Shock 2006" style="width: 120px; height: 90px"><img src="images/thumbnails/video_practice2006.jpg" alt="Practice for Culture Shock 2006" width="120" height="90"></a></li>
 			</ul>
                     </div>
+
+		    <div id="upcoming" class="content" style="display: none; padding: 30px 0px">
+			<p style="padding: 0px 50px">We will be voting on upcoming dance routines. Please watch these performances by professional Chinese dance troupes.</p>
+			<ul class="gallery">
+			    <li><a rel="prettyPhoto[upcoming]" href="http://www.youtube.com/watch?v=r_lsFq8yeY0" title="Fairies Dance in the Sky" style="width: 120px; height: 90px"><img src="images/thumbnails/upcoming_1.jpg" alt="Fairies Dance in the Sky" width="120" height="90"></a></li>
+			    <li><a rel="prettyPhoto[upcoming]" href="http://www.youtube.com/watch?v=6N1j-MwDxRs" title="Thousand Hands" style="width: 120px; height: 90px"><img src="images/thumbnails/upcoming_2.jpg" alt="Thousand Hands" width="120" height="90"></a></li>
+			    <li><a rel="prettyPhoto[upcoming]" href="http://www.youtube.com/watch?v=pG7s0o7Ry9w" title="Peacock of Good Luck" style="width: 120px; height: 90px"><img src="images/thumbnails/upcoming_3.jpg" alt="Peacock of Good Luck" width="120" height="90"></a></li>
+			    <li><a rel="prettyPhoto[upcoming]" href="http://www.youtube.com/watch?v=Q3ICWyV-F0Q" title="Secret Miansha" style="width: 120px; height: 90px"><img src="images/thumbnails/upcoming_4.jpg" alt="Secret Miansha" width="120" height="90"></a></li>
+			    <li><a rel="prettyPhoto[upcoming]" href="http://www.youtube.com/watch?v=ybReER9yt_E" title="Kung Fu &amp; Dance" style="width: 120px; height: 90px"><img src="images/thumbnails/upcoming_5.jpg" alt="Kung Fu &amp; Dance" width="120" height="90"></a></li>
+			</ul>
+		    </div>
 
                     <div id="photos" class="content" style="display: none; padding: 30px 0px">
 			<ul class="gallery">
