@@ -1,257 +1,183 @@
 <html>
     <head>
-        <link rel="stylesheet" type="text/css" href="css/style.css">
-        <script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
-        <script type="text/javascript">
-            function showDancers() {
-                hideAll();
-                $('div#dancers').toggle(true);
-                $('a#dancers').addClass('current');
-            }
-            function showTeam() {
-                hideAll();
-                $('div#team').toggle(true);
-                $('a#team').addClass('current');
-            }
-            function showHistory() {
-                hideAll();
-                $('div#history').toggle(true);
-                $('a#history').addClass('current');
-            }
-
-            function hideAll() {
-                $('td.content').children().toggle(false);
-                $('div.subnavigation a.current').removeClass('current');
-            }
-        </script>
+		<link href="css/style.css" rel="stylesheet" type="text/css" media="screen" />
     </head>
 
-    <body bgcolor="#111">
-        <table class="main">
-            <col id="leftborder"></col>
-	    <col></col>
-	    <col id="rightborder"></col>
-
-            <tr class="header">
-                <td class="leftborder"></td>
-                <td class="title">
+    <body>
+		<div id="wrapper">
+			<div id="header">
+				<div id="menu">
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="#" class="current_page_item">Troupe</a></li>
+						<li><a href="videos.html">Videos</a></li>
+						<li><a href="photos.html">Photos</a></li>
+						<li><a href="contact.html">Contact</a></li>
+					</ul>
+				</div>
+				<!-- end #menu -->
+			</div>
+			<!-- end #header -->
+			<hr />
+		<!-- end #header-wrapper -->
+		<!--
                     <a href="index.html"><img src="images/n101295_31849085_4399-crop.jpg" style="display: block; margin: 0px auto" alt="Radiance"></a>
                     <a href="index.html"><img src="images/radiance-text.png" style="display: block; margin: 0px auto" alt="Radiance"></a>
-                </td>
-                <td class="rightborder"></td>
-            </tr>
+					-->
 
-            <tr class="navigation">
-                <td class="leftborder"></td>
+			<div id="page">
+				<div id="content">
+					<div class="post">
+						<h2 class="title">2010-2011 Season</h2>
+						<div class="entry">
+							<h2>Dancers</h2>
+							<ul>
+								<li>Danica Yang</li>
+								<li>Connie Liu</li>
+								<li>Nina Zhang</li>
+								<li>Annabelle Chu Yan Fu</li>
+								<li>Annie Lee</li>
+								<li>Bonnie Wang</li>
+								<li>Danning Ge</li>
+								<li>Elaine Truong</li>
+								<li>Gayoung Kim</li>
+								<li>Joeyee Li</li>
+								<li>Pan Pan</li>
+								<li>Stephanie Dong</li>
+								<li>Veronica Lai</li>
+								<li>Xiaotong Li</li>
+								<li>Yang Chen</li>
+							</ul>
+							<br>
 
-                <td>
-                    <table id="navigation">
-                        <tr>
-                            <td class="navigation">
-                                <div class="navigation">
-                                    <a href="gallery.html">Gallery</a>
-                                </div>
-                            </td>
-                            <td class="navigation">
-                                <div class="navigation">
-                                    <a href="troupe.html" class="current">Troupe</a>
-                                </div>
-                            </td>
-                            <td class="navigation">
-                                <div class="navigation">
-                                    <a href="contact.html">Contact</a>
-                                </div>
-                            </td>
-                        </tr>
-                    </table>
-                </td>
+							<h2>Directors</h2>
+							<ul>
+								<li>Nina Zhang (11)</li>
+								<li>Danica Yang (12)</li>
+							</ul>
+						</div>
+					</div>
 
-                <td class="rightborder"></td>
-            </tr>
+					<div class="post">
+						<h2 class="title">2009-2010 Season</h2>
+						<div class="entry">
+							<h2>Dancers</h2>
+							<ul>
+								<li>Amanda Phingbodhipakkiya</li>
+								<li>Jessica Guo</li>
+								<li>Rebecca Tang</li>
+								<li>Connie Liu</li>
+								<li>Nina Zhang</li>
+								<li>Grace Chen</li>
+								<li>Danica Yang</li>
+								<li>Alicia Lui</li>
+							</ul>
+							<br>
 
-	    <tr class="subnavigation">
-		<td class="leftborder"></td>
+							<h2>Directors</h2>
+							<ul>
+								<li>Amanda Phingbodhipakkiya (10)</li>
+								<li>Rebecca Tang (10)</li>
+							</ul>
+						</div>
+					</div>
 
-		<td>
-		    <table id="subnavigation">
-			<tr>
-			    <td class="subnavigation">
-				<div class="subnavigation">
-				    <a href="#" id="dancers" onclick="showDancers()" class="current">Dancers</a>
+					<div class="post">
+						<h2 class="title">2008-2009 Season</h2>
+						<div class="entry">
+							<h2>Dancers</h2>
+							<ul>
+								<li>Amanda Phingbodhipakkiya</li>
+								<li>Christina Tzeng</li>
+								<li>Jessica Guo</li>
+								<li>Rebecca Tang</li>
+								<li>Connie Liu</li>
+								<li>Nina Zhang</li>
+							</ul>
+							<br>
+
+							<h2>Directors</h2>
+							<ul>
+								<li>Amanda Phingbodhipakkiya (10)</li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="post">
+						<h2 class="title">2007-2008 Season</h2>
+						<div class="entry">
+							<h2>Dancers</h2>
+							<ul>
+								<li>Amanda Phingbodhipakkiya</li>
+								<li>Angela Lu</li>
+								<li>Christina Tzeng</li>
+								<li>Ellen Wuu</li>
+								<li>Jessica Guo</li>
+								<li>Rebecca Tang</li>
+							</ul>
+							<br>
+
+							<h2>Directors</h2>
+							<ul>
+								<li>Ellen Wuu (08)</li>
+								<li>Angela Lu (09)</li>
+								<li>Amanda Phingbodhipakkiya (10)</li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="post">
+						<h2 class="title">2006-2007 Season</h2>
+						<div class="entry">
+							<h2>Dancers</h2>
+							<ul>
+								<li>Amanda Phingbodhipakkiya</li>
+								<li>Angela Lu</li>
+								<li>Christina Tzeng</li>
+								<li>Diana Hsu</li>
+								<li>Ellen Wuu</li>
+								<li>Jennifer Chen</li>
+								<li>Jennifer Hu</li>
+								<li>Jessica Guo</li>
+								<li>Lillian Lam</li>
+								<li>Rebecca Tang</li>
+							</ul>
+							<br>
+
+							<h2>Directors</h2>
+							<ul>
+								<li>Lillian Lam (07)</li>
+								<li>Angela Lu (09)</li>
+								<li>Amanda Phingbodhipakkiya (10)</li>
+							</ul>
+						</div>
+					</div>
+
 				</div>
-			    </td>
-			    <td class="subnavigation">
-				<div class="subnavigation">
-				    <a href="#" id="team" onclick="showTeam()">Team</a>
+				<div id="sidebar">
+					<ul>
+						<li>
+							<h2>The Company</h2>
+							<p>Company members proudly represent Columbia University and Chinese Students Club as they perform on and off campus. Auditions are held throughout the year. Be on the lookout for audition dates on the website.</p>
+						</li>
+						<li>
+							<h2>History</h2>
+							<p>Established in 2006, Radiance Chinese Dance Company has continued to perform classical, folk and contemporary Chinese dance at various Columbia University events. The company participates annually in CSC Night Market and Lunar Gala. Radiance has also performed for the Columbia Law School and the CollegeBoard National Conference at NYPL. The company's repertory includes "The Dai Umbrella Dance", "Flying Celestials", "The Peacock Dance" and "Liu Liu De Kang Ding, Liu Liu De Qing". </p>
+
+							<p>Since its inception, the company has seen tremendous growth, and continues to broaden its appeal by sharing the richness of Chinese culture through dance. The future of Radiance is filled with much promise and talent.</p>
+						</li>
+					</ul>
 				</div>
-			    </td>
-			    <td class="subnavigation">
-				<div class="subnavigation">
-				    <a href="#" id="history" onclick="showHistory()">History</a>
-				</div>
-			    </td>
-			</tr>
-		    </table>
-		</td>
-                <td class="rightborder"></td>
-	    </tr>
+				<!-- end #sidebar -->
+				<div style="clear: both;">&nbsp;</div>
+			</div>
+			<!-- end #page -->
+		</div>
 
-            <tr class="content">
-                <td class="leftborder"></td>
-                <td class="content">
-                    <div id="dancers" class="content">
-                        <h2>Dancers</h2>
+		<div id="footer">
+			<p>Copyright (c) 2010 Radiance, a Satellite Group of the <a href="http://www.columbia.edu/cu/csc/">Columbia University Chinese Students Club</a>. All rights reserved. Design by <a href="http://www.freecsstemplates.org/">Free CSS Templates</a>.</p>
+		</div>
+		<!-- end #footer -->
 
-                        <p>Company members proudly represent Columbia University and Chinese Students Club as they perform on and off campus. Auditions are held throughout the year. Be on the lookout for audition dates on the website.</p>
-
-                        <table class="dancers">
-			    <tr>
-                                <td style="vertical-align: top; border: 5px solid transparent">
-                                    <h3>2010-2011 Season</h3>
-				    Danica Yang<br>
-				    Connie Liu<br>
-				    Nina Zhang<br>
-				    Annabelle Chu Yan Fu<br>
-				    Annie Lee<br>
-				    Bonnie Wang<br>
-				    Danning Ge<br>
-				    Elaine Truong<br>
-				    Gayoung Kim<br>
-				    Joeyee Li<br>
-				    Pan Pan<br>
-				    Stephanie Dong<br>
-				    Veronica Lai<br>
-				    Xiaotong Li<br>
-				    Yang Chen<br>
-				    <br>
-				</td>
-
-                                <td style="vertical-align: top; border: 5px solid transparent">
-                                    <h3>2009-2010 Season</h3>
-				    Amanda Phingbodhipakkiya<br>
-				    Jessica Guo<br>
-				    Rebecca Tang<br>
-				    Connie Liu<br>
-				    Nina Zhang<br>
-				    Grace Chen<br>
-				    Danica Yang<br>
-				    Alicia Lui<br>
-				    <br>
-				</td>
-
-                                <td style="vertical-align: top; border: 5px solid transparent">
-                                    <h3>2008-2009 Season</h3>
-
-                                    Amanda Phingbodhipakkiya<br>
-                                    Christina Tzeng<br>
-                                    Jessica Guo<br>
-                                    Rebecca Tang<br>
-                                    Connie Liu<br>
-                                    Nina Zhang<br>
-                                    <br>
-                                </td>
-			    </tr>
-
-                            <tr>
-                                <td style="vertical-align: top; border: 5px solid transparent">
-                                    <h3>2007-2008 Season</h3>
-
-                                    Amanda Phingbodhipakkiya<br>
-                                    Angela Lu<br>
-                                    Christina Tzeng<br>
-                                    Ellen Wuu<br>
-                                    Jessica Guo<br>
-                                    Rebecca Tang<br>
-                                    <br>
-                                </td>
-
-                                <td style="vertical-align: top; border: 5px solid transparent">
-                                    <h3>2006-2007 Season</h3>
-
-                                    Amanda Phingbodhipakkiya<br>
-                                    Angela Lu<br>
-                                    Christina Tzeng<br>
-                                    Diana Hsu<br>
-                                    Ellen Wuu<br>
-                                    Jennifer Chen<br>
-                                    Jennifer Hu<br>
-                                    Jessica Guo<br>
-                                    Lillian Lam<br>
-                                    Rebecca Tang<br>
-                                    <br>
-                                </td>
-                            </tr>
-                        </table>
-                    </div>
-
-                    <div id="team" class="content" style="display: none">
-                        <h2>Directors</h2>
-
-                        <table class="team">
-                            <tr>
-                                <td style="vertical-align: top; border: 5px solid transparent">
-                                    <h3>2010-2011 Season</h3>
-
-				    Nina Zhang (11)<br>
-				    Danica Yang (12)<br>
-				    <br>
-                                </td>
-
-                                <td style="vertical-align: top; border: 5px solid transparent">
-                                    <h3>2009-2010 Season</h3>
-
-                                    Amanda Phingbodhipakkiya (10)<br>
-				    Rebecca Tang (10)<br>
-				    <br>
-                                </td>
-
-                                <td style="vertical-align: top; border: 5px solid transparent">
-                                    <h3>2008-2009 Season</h3>
-
-                                    Amanda Phingbodhipakkiya (10)<br>
-				    <br>
-                                </td>
-			    </tr>
-
-			    <tr>
-                                <td style="vertical-align: top; border: 5px solid transparent">
-                                    <h3>2007-2008 Season</h3>
-
-                                    Ellen Wuu (08)<br>
-                                    Angela Lu (09)<br>
-                                    Amanda Phingbodhipakkiya (10)<br>
-				    <br>
-                                </td>
-
-                                <td style="vertical-align: top; border: 5px solid transparent">
-                                    <h3>2006-2007 Season</h3>
-
-                                    Lillian Lam (07)<br>
-                                    Angela Lu (09)<br>
-                                    Amanda Phingbodhipakkiya (10)<br>
-				    <br>
-                                </td>
-                            </tr>
-                        </table>
-                    </div>
-
-                    <div id="history" class="content" style="display: none">
-                        <h2>History</h2>
-
-                        <p>Established in 2006, Radiance Chinese Dance Company has continued to perform classical, folk and contemporary Chinese dance at various Columbia University events. The company participates annually in CSC Night Market and Lunar Gala. Radiance has also performed for the Columbia Law School and the CollegeBoard National Conference at NYPL. The company's repertory includes "The Dai Umbrella Dance", "Flying Celestials", "The Peacock Dance" and "Liu Liu De Kang Ding, Liu Liu De Qing". </p>
-
-                        <p>Since its inception, the company has seen tremendous growth, and continues to broaden its appeal by sharing the richness of Chinese culture through dance. The future of Radiance is filled with much promise and talent.</p>
-                    </div>
-                </td>
-                <td class="rightborder"></td>
-            </tr>
-
-            <tr class="footer">
-                <td class="leftborder"></td>
-                <td style="text-align:center">
-                </td>
-                <td class="rightborder"></td>
-            </tr>
-        </table>
     </body>
 </html>
